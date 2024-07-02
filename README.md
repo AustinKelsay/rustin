@@ -100,8 +100,11 @@ let mut vec = Vec::new();
 vec.push(1);
 vec.push(2);
 vec.push(3);
-
 let first = vec[0]; // 1
+
+// Slices
+let slice = &vec[1..3]; // Creates a slice of the vector from index 1 to 2
+println!("Slice: {:?}", slice); // Slice: [2, 3]
 
 // Iterating over vectors
 for x in &vec {
